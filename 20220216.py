@@ -1,5 +1,4 @@
-print('반지름을 입력하시요:')
-r = int(input())
+r = int(input('반지름을 입력하시요:'))
 PI = 3.14
 print('원의 둘레: %.2f' %(2*r*PI))
 print('원의 넓이: %.2f' %((r**2)*PI))
@@ -30,3 +29,13 @@ for i in quadrant:
     else:
         print('*(%d, %d)는 %d사분면에 속하지 않습니다.' %(x, y, i+1))
 
+x = [0, 0, 0, 0]
+y = [0, 0, 0, 0]
+for i in range(4):
+    print('2차원 공간의 좌표 x', i+1, ', y', i+1, ' 를 입력하세요:', sep='')
+    x[i] = int(input())
+    y[i] = int(input())
+if (y[0] - y[1]) / (x[0] - x[1]) == (y[2] - y[3]) / (x[2] - x[3]):
+    print('평행')
+else:
+    print('평행 X')
