@@ -7,10 +7,8 @@ if (a+b < c) and (a+c < b) and (b+c < a):
 else:
     print('no')
     
-print('원피스의 개수를 입력하시요:')
-a = int(input())
-print('스웨터의 개수를 입력하시요:')
-b = int(input())
+a = int(input('원피스의 개수를 입력하시요:'))
+b = int(input('스웨터의 개수를 입력하시요:'))
 t = a*5 + b*3
 if t < 10:
     result = int(t*0.95 * 10000)
@@ -20,15 +18,13 @@ else:
     result = int(t*0.8 * 10000)
 print('총액:', result)
 
-print('숫자를 입력하세요:')
-a = int(input())
+a = int(input('숫자를 입력하세요:'))
 if (a%10 == 3) or (a%10 == 6) or (a%10 == 9):
     print('yes')
 else:
     print('no')
     
-print('숫자를 입력하세요:')
-a = int(input())
+a = int(input('숫자를 입력하세요:'))
 result = 0
 while a > 10:
     result += a%10
@@ -37,8 +33,7 @@ while a > 10:
         result += a
 print(result)
 
-print('숫자를 입력하세요:')
-a = int(input())
+a = int(input('숫자를 입력하세요:'))
 result = 0
 for i in range(a+1):
     result += 2**i
@@ -47,22 +42,18 @@ print(result)
 a = 1
 result = 0
 while a != 0:
-    print('숫자를 입력하세요:')
-    a = int(input())
+    a = int(input('숫자를 입력하세요:'))
     result += a
 print(result)
 
-print("가로 길이를 입력하세요: ")
-width = int(input())
-print('세로 길이를 입력하세요: ')
-height = int(input())
+width = int(input("가로 길이를 입력하세요: "))
+height = int(input('세로 길이를 입력하세요: '))
 for i in range(height):
     for j in range(width):
         print('*', end= '')
     print()
 
-print('밑변의 길이를 입력하세요:')
-a = int(input())
+a = int(input('밑변의 길이를 입력하세요:'))
 for i in range(a+1):
     for j in range(a-i):
         print(' ', end='')
