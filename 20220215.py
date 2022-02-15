@@ -52,6 +52,14 @@ for i in range(height):
     for j in range(width):
         print('*', end= '')
     print()
+    
+a = int(input('밑변의 길이를 입력하세요:'))
+for i in range(a+1):
+    for j in range(a-i):
+        print(' ', end='')
+    for j in range(i):
+        print('* ', end='')
+    print()
 
 a = int(input('밑변의 길이를 입력하세요:'))
 for i in range(a+1):
