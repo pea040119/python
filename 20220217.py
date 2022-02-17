@@ -1,5 +1,5 @@
 import random
-
+'''
 x = random.randint(1, 100)
 while True:
     n = int(input('n:'))
@@ -11,11 +11,11 @@ while True:
         break
 print('success')
 
-
+'''
 def game():
     x = random.sample(range(0, 10), 3)
     c = 0
-    while c < 10:
+    while c < 9:
         n = []
         ball = 0
         strike = 0
@@ -30,4 +30,10 @@ def game():
                 else:
                     ball += 1
         print('ball:', ball, 'strike:', strike)
+        if strike == 3:
+            print('win')
+            c = 0
+            break
+    if c == 9:
+        print('lose')
 game()
